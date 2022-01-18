@@ -3,11 +3,50 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Geek Chat</title>
+    <title>Django Chat</title>
     {% bootstrap_css %}
+
+    <style>
+
+        body {
+            background: #222;
+          }
+    
+        .container {
+            border-radius: 5px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 30%;
+            min-width: 500px;
+            height: 100px;
+            min-height: 100px;
+            padding: 20px;
+            background: royalblue;
+            color: white;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+          }
+
+        .container textarea{
+            width: 100%;
+            height: 82%
+        }
+
+        .container input{
+            width: 100%
+        }
+
+        #botao {
+            margin-top: 50px;
+        }
+          
+    </style>
+
 </head>
 <body>
- <div clas="container">
+ <div class="container">
      Qual sala de chat você gostaria de entrar?<br/>
         <input id="nome_sala" name="nome_sala" type="text" size="100" placeholder="Nome da sala..."><br/>
         {% buttons %}
